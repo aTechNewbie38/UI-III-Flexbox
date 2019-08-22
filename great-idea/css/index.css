@@ -62,88 +62,86 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-nav{
-	display: flex;
-	width: 1200px; 
-	height: 50px; 
-}
-a{
-	justify-content: space-evenly;
-	text-decoration: none;
-	padding: 30px;
-	align-item: center;
-	font-size: 20px;
-	color: gray; 
-}
-hr{
-	border: 1px solid black; 
-}
-.content h3{
-	background-color: red;
-	font-size: 20px;
-	font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin: 0 auto; 
-}
-.services-header-img{
-	margin: 0 auto;
-	align-item: center; 
-}
-.container .content{
-	background-color: lightgray;
-	display: inline-block;
-	vertical-align: top;
-	font-size: 18px;
-	text-align: left;
-	height: 250px;
-	width: 500px;
-	margin: 30px;
-	border: 1px solid black;
-	padding: 20px;
-}
-button{
-	background-color: white;
-	font-size: 12px; 
-	height: 40px;
-	width: 175px;
-	margin top:	15px;
-	border: 1px solid black;
-	padding: 8px 44px; 
-	text-align: center;  
-	border-radius: 6px;
-	cursor: pointer; 
-}
-.bottom-content{
-	display: flex; 
-	background-color: blue; 
-	font-size: 25px; 
-	font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-	margin: 25px;
-}
-.container p{
-	background-color: blueviolet; 
-	display: flex;
-	display: inline-block;
-	font-size: 18px;
-	height: 100px;
-	width: 400px;
-}
-li{
-	font-size: 18px; 
-	font-family: Verdana, Geneva, Tahoma, sans-serif
-	height: 5px;
-	width: 190px;
-	margin:	40px;
-	list-style-type: square;
-}
-.services-info-img{
-	flex: right;
+
+body{
+	width: 900px; 
 	margin: 0 auto; 
 }
+
+header{
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+	align-items: center; 
+	padding: 10px 0; 
+}
+
+header nav{
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+	width: 70%; 
+}
+
+header nav a{
+	color: gray; 
+}
+
+header nav a:link{
+	text-decoration: none; 
+}
+
+h1{
+	font-size: 30px; 
+	padding: 10px 0; 
+}
+
+.middle-container{
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	border-top: 1px solid black; 
+	border-bottom: 1px solid black;
+	margin: 20px 0; 
+	padding: 10px 0; 
+}
+
+.middle-container .content{
+	width: 45%;
+	border: 1px solid black; 
+	padding: 20px; 
+	margin: 15px 0; 
+	background-color: lightgray; 
+}
+
+.middle-container .content button{
+	border: 1px solid black; 
+	border-radius: 5px; 
+	padding: 10px 25px; 
+	margin-top: 15px;
+}
+
+.bottom-container{
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between; 
+}
+
+.bottom-container .facts-box{
+	width: 50%; 
+}
+
+ul{
+	list-style: square; 
+}
+
+ul li{
+	margin: 10px 0; 
+}
+
 footer{
-	margin: 0 auto;
-	text-align:	center; 
+	text-align: center;
+	padding: 50px 0; 
 }
